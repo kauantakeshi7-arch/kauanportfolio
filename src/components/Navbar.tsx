@@ -14,7 +14,7 @@ export default function Navbar() {
       
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" aria-label="Ir para a página inicial" className="text-xl font-bold font-space text-white tracking-tighter relative z-50">
-          Kauan<span className="text-lime-500">Takeshi</span>
+          Kauan<span className="text-lime-500">.Dev</span>
         </Link>
         
         {/* Desktop Menu */}

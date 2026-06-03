@@ -65,7 +65,7 @@ export default function ContactSection() {
           name: data.name,
           email: data.email,
           message: data.message,
-          subject: "Novo Contato via Portfólio (Kauan Takeshi)",
+          subject: "Novo Contato via Portfólio (Kauan.Dev)",
           from_name: "Portfólio Web"
         }),
       });

@@ -24,13 +24,13 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://kauantakeshi.dev"),
-  title: "Kauan Takeshi | Software Engineer",
+  title: "Kauan.Dev | Software Engineer",
   description: "Portfólio de Kauan Takeshi. Desenvolvimento de software focado em performance, conversão e design premium.",
   openGraph: {
-    title: "Kauan Takeshi | Software Engineer",
+    title: "Kauan.Dev | Software Engineer",
     description: "Desenvolvimento de software focado em performance e design premium.",
     url: "https://kauantakeshi.dev",
-    siteName: "Kauan Takeshi",
+    siteName: "Kauan.Dev",
     images: [
       {
         url: "/og-image.jpg",
