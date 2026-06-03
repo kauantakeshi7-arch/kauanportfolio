@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk, Syne } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -41,6 +41,13 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

@@ -85,7 +85,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="py-32 px-6 max-w-4xl mx-auto relative">
+    <section id="contact" ref={sectionRef} className="py-32 px-6 max-w-4xl mx-auto relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full pointer-events-none -z-10" style={{ background: 'radial-gradient(circle, rgba(132, 204, 22, 0.1) 0%, transparent 70%)' }} />
 
       <div className="text-center mb-16 contact-anim">
