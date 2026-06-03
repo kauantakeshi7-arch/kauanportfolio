@@ -33,7 +33,6 @@ export const projects: Project[] = [
       { name: "SSE Streams" }
     ],
     image: "/mockups/ai-pc-builder.png",
-    githubUrl: "https://github.com/kauantakeshi7-arch/projeto2prototipo",
-    liveUrl: "https://github.com/kauantakeshi7-arch/projeto2prototipo"
+    githubUrl: "https://github.com/kauantakeshi7-arch/projeto2prototipo"
   }
 ];
