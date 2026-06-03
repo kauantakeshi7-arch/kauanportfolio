@@ -14,11 +14,13 @@ export default function HeroSection() {
     const tl = gsap.timeline();
     
     tl.from(".hero-title", {
-      y: 50,
+      y: "120%",
+      rotateZ: 3,
       opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power3.out",
+      duration: 1.2,
+      stagger: 0.15,
+      ease: "power4.out",
+      transformOrigin: "left top"
     })
     .fromTo(".hero-desc-word", {
       opacity: 0,
@@ -47,10 +49,14 @@ export default function HeroSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none -z-10" style={{ background: 'radial-gradient(circle, rgba(132, 204, 22, 0.15) 0%, transparent 70%)' }} />
       
       <div className="max-w-4xl text-center space-y-6 md:space-y-8 z-10">
-        <h1 className="text-[2.5rem] leading-[1.1] md:text-7xl font-bold tracking-tight font-syne text-white">
-          <span className="hero-title block">Marcas excelentes falham</span>
-          <span className="hero-title block">
-            por interfaces <span className="bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-emerald-500 italic">comuns.</span>
+        <h1 className="text-[2.5rem] leading-[1.1] md:text-7xl font-bold tracking-tight font-syne text-white flex flex-col items-center">
+          <span className="block overflow-hidden pb-1 md:pb-4">
+            <span className="hero-title block origin-bottom-left">Marcas excelentes falham</span>
+          </span>
+          <span className="block overflow-hidden pb-1 md:pb-4">
+            <span className="hero-title block origin-bottom-left">
+              por interfaces <span className="bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-emerald-500 italic pr-2">comuns.</span>
+            </span>
           </span>
         </h1>
         
