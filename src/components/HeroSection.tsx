@@ -49,7 +49,7 @@ export default function HeroSection() {
         </h1>
         
         <p className="hero-desc text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-          Eu sou Kauan Takeshi. Desenvolvo produtos digitais de alta performance onde código robusto e estética premium convergem.
+          Me chamo Kauan. Desenvolvo produtos digitais de alta performance onde código robusto e estética premium convergem.
         </p>
         
         <div className="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
