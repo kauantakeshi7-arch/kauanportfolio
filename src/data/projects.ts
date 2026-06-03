@@ -18,5 +18,22 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/kauantakeshi7-arch/primeiroprojeto",
     liveUrl: "https://kauantakeshi7-arch.github.io/primeiroprojeto/"
   },
-  // Mais projetos podem ser adicionados aqui no futuro facilmente!
+  {
+    id: "ai-pc-builder",
+    title: "AI PC Builder (V5)",
+    category: "Inteligência Artificial & Engenharia",
+    description: "Plataforma avançada que atua como Arquiteto de Hardware Explicável (XAI). Aplica regras matemáticas determinísticas e IA para gerar setups de PC imunes a gargalos e incompatibilidades.",
+    problem: "A escolha de peças para PC é um processo propício a erros (sockets errados, gargalo de GPU/CPU). Modelos generativos tradicionais costumam alucinar peças incompatíveis.",
+    solution: "Criação de um motor híbrido: A IA (Gemini) extrai a intenção via NLP, e um Motor Determinístico de Hardware valida a matemática. Inclui Web Scraping em tempo real (Server-Sent Events) e Benchmark Dinâmico de FPS.",
+    technologies: [
+      { name: "TypeScript" },
+      { name: "Next.js" },
+      { name: "Express.js" },
+      { name: "Gemini AI" },
+      { name: "SSE Streams" }
+    ],
+    image: "/mockups/ai-pc-builder.png",
+    githubUrl: "https://github.com/kauantakeshi7-arch/projeto2prototipo",
+    liveUrl: "https://github.com/kauantakeshi7-arch/projeto2prototipo"
+  }
 ];
