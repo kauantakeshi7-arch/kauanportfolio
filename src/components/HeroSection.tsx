@@ -48,7 +48,7 @@ export default function HeroSection() {
           </span>
         </h1>
         
-        <p className="hero-desc text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+        <p className="hero-desc text-xl md:text-2xl text-zinc-300 font-medium font-space max-w-2xl mx-auto leading-relaxed">
           Me chamo Kauan. Desenvolvo produtos digitais de alta performance onde código robusto e estética premium convergem.
         </p>
         
