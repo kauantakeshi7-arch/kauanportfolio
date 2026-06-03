@@ -8,9 +8,12 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505]/70 backdrop-blur-xl border-b border-white/[0.05]">
+    <nav className="fixed top-0 left-0 w-full z-50 border-b border-white/[0.05]">
+      {/* Background layer to prevent filter from breaking fixed children */}
+      <div className="absolute inset-0 bg-[#050505]/70 backdrop-blur-xl -z-10" />
+      
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" aria-label="Ir para a página inicial" className="text-xl font-bold font-space text-white tracking-tighter z-50">
+        <Link href="/" aria-label="Ir para a página inicial" className="text-xl font-bold font-space text-white tracking-tighter relative z-50">
           Kauan<span className="text-lime-500">Takeshi</span>
         </Link>
         
@@ -25,7 +28,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden text-white z-50 p-2"
+          className="md:hidden text-white relative z-50 p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
