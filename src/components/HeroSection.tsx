@@ -8,6 +8,8 @@ import { ArrowDown } from "lucide-react";
 export default function HeroSection() {
   const container = useRef<HTMLDivElement>(null);
   
+  const subtitleWords = "Me chamo Kauan. Desenvolvo produtos digitais de alta performance onde código robusto e estética premium convergem.".split(" ");
+  
   useGSAP(() => {
     const tl = gsap.timeline();
     
@@ -18,11 +20,15 @@ export default function HeroSection() {
       stagger: 0.2,
       ease: "power3.out",
     })
-    .from(".hero-desc", {
-      y: 20,
+    .fromTo(".hero-desc-word", {
       opacity: 0,
-      duration: 0.8,
-      ease: "power3.out",
+      y: 15,
+    }, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      stagger: 0.02,
+      ease: "power2.out",
     }, "-=0.5")
     .from(".hero-cta", {
       scale: 0.9,
@@ -48,8 +54,12 @@ export default function HeroSection() {
           </span>
         </h1>
         
-        <p className="hero-desc text-xl md:text-2xl text-zinc-300 font-medium font-space max-w-2xl mx-auto leading-relaxed">
-          Me chamo Kauan. Desenvolvo produtos digitais de alta performance onde código robusto e estética premium convergem.
+        <p className="text-xl md:text-2xl text-zinc-300 font-medium font-space max-w-2xl mx-auto leading-relaxed flex flex-wrap justify-center gap-x-[0.25em]">
+          {subtitleWords.map((word, index) => (
+            <span key={index} className="hero-desc-word opacity-0">
+              {word}
+            </span>
+          ))}
         </p>
         
         <div className="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 md:pt-8">
