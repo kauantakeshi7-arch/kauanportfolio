@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroller from "@/components/SmoothScroller";
 import CustomCursor from "@/components/CustomCursor";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -69,6 +70,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </SmoothScroller>
+        <SpeedInsights />
       </body>
     </html>
   );
