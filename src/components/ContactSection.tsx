@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Send, CheckCircle2 } from "lucide-react";
+import { Send } from "lucide-react";
 
 // Validação com Zod (Sênior pattern)
 const contactSchema = z.object({

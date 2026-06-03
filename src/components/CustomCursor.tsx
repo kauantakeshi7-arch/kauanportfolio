@@ -1,19 +1,18 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export default function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
-  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     // Only enable on fine pointer devices (desktops)
-    if (window.matchMedia("(pointer: fine)").matches) {
-      setIsDesktop(true);
+    if (typeof window === "undefined" || !window.matchMedia("(pointer: fine)").matches) {
+      return;
     }
 
-    if (!isDesktop || !cursorRef.current) return;
+    if (!cursorRef.current) return;
 
     const cursor = cursorRef.current;
     
@@ -52,9 +51,7 @@ export default function CustomCursor() {
         el.removeEventListener("mouseleave", handleLinkLeave);
       });
     };
-  }, [isDesktop]);
-
-  if (!isDesktop) return null;
+  }, []);
 
   return (
     <div
