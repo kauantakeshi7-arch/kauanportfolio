@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     id: "clinica-geminus",
     title: "Clínica Geminus",
-    category: "Landing Page & Institutional",
+    category: "Landing Page & Institucional",
     description: "Site institucional responsivo para a Clínica Geminus. Focado em conversão de pacientes via WhatsApp, apresentando o corpo clínico e as especialidades médicas.",
     problem: "A clínica não possuía presença digital sólida, dificultando o agendamento de consultas por novos pacientes que buscam no Google.",
     solution: "Desenvolvimento de uma Landing Page otimizada para velocidade e mobile-first, com navegação intuitiva e chamadas para ação (CTAs) claras direcionando para o atendimento.",
