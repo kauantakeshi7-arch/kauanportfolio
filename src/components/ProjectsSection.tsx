@@ -11,7 +11,7 @@ import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 // Tilt component wrapper for high performance
-function ProjectCardTilt({ children, imageUrl }: { children: React.ReactNode, imageUrl?: string }) {
+function ProjectCardTilt({ imageUrl }: { imageUrl?: string }) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
